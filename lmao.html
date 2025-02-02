@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e8f5e9;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .header .title {
+      font-size: 1.5em;
+    }
+
+    .header .cart-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .menu-item {
+      width: 90%;
+      max-width: 400px;
+      background: #fff;
+      margin: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .menu-item .content {
+      padding: 15px;
+    }
+
+    .menu-item h3 {
+      margin: 0 0 10px;
+    }
+
+    .menu-item p {
+      margin: 0 0 15px;
+      color: #666;
+    }
+
+    .menu-item .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .menu-item .add-to-cart {
+      display: block;
+      text-align: center;
+      margin: 10px 0 0;
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .menu-item .add-to-cart:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="title">Burger Menu</div>
+  <button class="cart-btn">Cart</button>
+</div>
+
+<div class="menu">
+  <div class="menu-item">
+    <img src="https://cookingfrog.com/wp-content/uploads/2023/06/Longhorn-Spicy-Chicken-Bites.jpg" alt="Classic Spicy Bites">
+    <div class="content">
+      <h3>Classic Spicy Bites</h3>
+      <p>Crispy, golden bites infused with bold chili flavors for a fiery kick.</p>
+      <div class="price">$5.99</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://www.thespicehouse.com/cdn/shop/articles/Insane_Hot_Wings_720x.jpg?v=1588270427" alt="Zesty Chicken Wings">
+    <div class="content">
+      <h3>Zesty Chicken Wings</h3>
+      <p>Perfectly glazed wings with a tangy twist, served with a cool dipping sauce.</p>
+      <div class="price">$6.99</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://www.pimsthaiorchid.com/wp-content/uploads/2020/03/Crispy-Thai-Delight.jpg" alt="Crispy Thai Delight">
+    <div class="content">
+      <h3>Crispy Thai Delight</h3>
+      <p>A fusion of Thai spices and crispy chicken with a refreshing touch.</p>
+      <div class="price">$12.99</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://www.weightwatchers.com/us/sites/default/files/styles/ww_image_scale_720/public/umami_bombs.jpg" alt="Savory Umami Stack">
+    <div class="content">
+      <h3>Savory Umami Stack</h3>
+      <p>A rich blend of flavors featuring mushrooms, tomatoes, and special sauces.</p>
+      <div class="price">$12.99</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://i.pinimg.com/originals/5e/1b/6f/5e1b6f4b4b4b4b4b4b4b4b4b4b4b4b4b.jpg" alt="Bold Blue Burger">
+    <div class="content">
+      <h3>Bold Blue Burger</h3>
+      <p>A bold combination of creamy blue cheese and crispy greens in every bite.</p>
+      <div class="price">$12.99</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="https://www.heritagefoods.in/blog/wp-content/uploads/2021/06/Milkshakes.jpg" alt="Flavored Shakes">
+    <div class="content">
+      <h3>Flavored Shakes</h3>
+      <p>Thick, creamy shakes in Oreo, chocolate, and strawberry flavors.</p>
+      <div class="price">$5.99</div>
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
