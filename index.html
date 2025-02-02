@@ -38,14 +38,14 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 10px;
+      gap: 20px;
+      padding: 20px;
     }
 
     .menu-item {
-      width: 90%;
-      max-width: 400px;
+      width: calc(33.333% - 20px);
+      max-width: 300px;
       background: #fff;
-      margin: 10px;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -91,6 +91,18 @@
     .menu-item .add-to-cart:hover {
       background-color: #0056b3;
     }
+
+    @media (max-width: 900px) {
+      .menu-item {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .menu-item {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -127,36 +139,6 @@
       <h3>Crispy Thai Delight</h3>
       <p>A fusion of Thai spices and crispy chicken with a refreshing touch.</p>
       <div class="price">$12.99</div>
-      <a href="#" class="add-to-cart">Add to Cart</a>
-    </div>
-  </div>
-
-  <div class="menu-item">
-    <img src="https://raw.githubusercontent.com/ahasnat24/burger-menu/refs/heads/main/4.jpg" alt="Savory Umami Stack">
-    <div class="content">
-      <h3>Savory Umami Stack</h3>
-      <p>A rich blend of flavors featuring mushrooms, tomatoes, and special sauces.</p>
-      <div class="price">$12.99</div>
-      <a href="#" class="add-to-cart">Add to Cart</a>
-    </div>
-  </div>
-
-  <div class="menu-item">
-    <img src="https://raw.githubusercontent.com/ahasnat24/burger-menu/refs/heads/main/5.jpg" alt="Bold Blue Burger">
-    <div class="content">
-      <h3>Bold Blue Burger</h3>
-      <p>A bold combination of creamy blue cheese and crispy greens in every bite.</p>
-      <div class="price">$12.99</div>
-      <a href="#" class="add-to-cart">Add to Cart</a>
-    </div>
-  </div>
-
-  <div class="menu-item">
-    <img src="https://raw.githubusercontent.com/ahasnat24/burger-menu/refs/heads/main/6.jpg" alt="Flavored Shakes">
-    <div class="content">
-      <h3>Flavored Shakes</h3>
-      <p>Thick, creamy shakes in Oreo, chocolate, and strawberry flavors.</p>
-      <div class="price">$5.99</div>
       <a href="#" class="add-to-cart">Add to Cart</a>
     </div>
   </div>
